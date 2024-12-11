@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Organizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Weather Section -->
+        <section id="weather">
+            <h2>Weather</h2>
+            <input type="text" id="city" placeholder="Enter City">
+            <button id="get-weather-btn">Get Weather</button>
+            <p id="weather-result"></p>
+        </section>
+
+        <!-- Goal Setting Section -->
+        <section id="goal-setting">
+            <h2>Goal Setting</h2>
+            <input type="text" id="goal-input" placeholder="Enter your goal">
+            <button id="add-goal-btn">Add Goal</button>
+            <ul id="goal-list"></ul>
+        </section>
+
+        <!-- To-Do List Section -->
+        <section id="todo-list">
+            <h2>To-Do List</h2>
+            <input type="text" id="task-input" placeholder="Enter a task">
+            <select id="task-category">
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Urgent">Urgent</option>
+            </select>
+            <button id="add-task-btn">Add Task</button>
+            <ul id="task-list"></ul>
+        </section>
+
+        <!-- Reminders Section -->
+        <section id="reminders">
+            <h2>Personalized Reminders</h2>
+            <input type="text" id="reminder-input" placeholder="Enter reminder">
+            <input type="datetime-local" id="reminder-time">
+            <button id="add-reminder-btn">Add Reminder</button>
+            <ul id="reminder-list"></ul>
+        </section>
+
+        <!-- Habit Tracker Section -->
+        <section id="habit-tracker">
+            <h2>Habit Tracker</h2>
+            <input type="text" id="habit-input" placeholder="Enter a habit">
+            <button id="add-habit-btn">Add Habit</button>
+            <ul id="habit-list"></ul>
+        </section>
+
+        <!-- Health Tracker Section -->
+        <section id="health-tracker">
+            <h2>Health Tracker</h2>
+            <input type="number" id="steps-input" placeholder="Enter steps">
+            <input type="number" id="calories-input" placeholder="Enter calories burned">
+            <input type="number" id="sleep-input" placeholder="Enter hours of sleep">
+            <button id="track-health-btn">Track Health</button>
+            <ul id="health-list"></ul>
+        </section>
+
+        <!-- Expense Tracker Section -->
+        <section id="expense-tracker">
+            <h2>Expense Tracker</h2>
+            <input type="text" id="expense-name" placeholder="Expense name">
+            <input type="number" id="expense-amount" placeholder="Amount">
+            <button id="add-expense-btn">Add Expense</button>
+            <ul id="expense-list"></ul>
+        </section>
+
+        <!-- Calendar Section -->
+        <section id="calendar">
+            <h2>Calendar</h2>
+            <input type="date" id="calendar-date">
+            <button id="add-event-btn">Add Event</button>
+            <ul id="event-list"></ul>
+        </section>
+
+        <!-- Pomodoro Timer Section -->
+        <section id="pomodoro-timer">
+            <h2>Pomodoro Timer</h2>
+            <p>Time Left: <span id="time-left">25:00</span></p>
+            <button id="start-pomodoro-btn">Start Pomodoro</button>
+            <button id="reset-pomodoro-btn">Reset</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
